@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.letreiro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color:#180303;
+  font-weight: bold;
+  background-color: #ce0f0f; 
+  width: 40%;
+  margin-left: 30%;
+  height: 30%;
+  border-radius: 3px;
+  border: 6px outset rgb(239, 176, 28);
+  margin-top: 100px;
+}
+.letreiro-texto {
+  animation: letreiroAnimacao 60s linear infinite; /* Ajuste a duração da animação conforme necessário */
+  display: inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow: hidden; /* Oculta o texto além do contêiner */
+  border-right: 3px solid transparent; /* Cria uma "borda" simulando o cursor */
+  animation: typing 2s steps(40) infinite;
+}
+.certer{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+@keyframes letreiroAnimacao {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
