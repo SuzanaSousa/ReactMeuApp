@@ -1,10 +1,13 @@
 import React from "react";
 import{ Link } from "react-router-dom"; //a  utilizar link
+import './index.css';
 
 
 const Home = () => {
+   
     return(
-        <div>
+        
+        <div className="home-container">
             <h1> Pagina Inicial </h1>
             <nav>
                 <ul>

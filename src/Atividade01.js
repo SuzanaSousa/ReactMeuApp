@@ -9,8 +9,8 @@ function Atividade01(){
          <h1 class="certer"> Atividade 01 </h1>
          <Letreiro /> 
          <Relogio />
-         
-         <Link to="/"> Retormar para pagina index</Link>
+         <div className="container">
+          <Link to="/">Retormar</Link></div>
         </>
     )
 }

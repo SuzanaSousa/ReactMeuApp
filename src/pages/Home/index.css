@@ -1,0 +1,39 @@
+
+.home-container {
+    background-image: url('./img/react.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .home-container h1 {
+    margin-top: -30% ;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+   
+  }
+  
+  .home-container nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .home-container nav ul li {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+  }
+  
+  .home-container nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
