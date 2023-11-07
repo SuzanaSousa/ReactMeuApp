@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
 function ContadorDePessoas() {
 
     const [contadorMasculino, setContadorMasculino] = useState(0);
-    const [contadorFeminino, setContadorFeminino] = useState(0);
+      const [contadorFeminino, setContadorFeminino] = useState(0);
     const [contadorTotal, setContadorTotal] = useState(0);
   
     useEffect(() => {
@@ -24,11 +24,14 @@ function ContadorDePessoas() {
         clearInterval(interval);
       };
     }, []);
-    function atualizarContadores() {
+    const atualizarContadores = ()=> {
         setContadorTotal(contadorMasculino + contadorFeminino);
       }
     
   function adicionarMasculino() {
+
+
+    
     setContadorMasculino(contadorMasculino + 1);
     atualizarContadores();
   }
