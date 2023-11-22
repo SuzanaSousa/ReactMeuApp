@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
 function ContadorDePessoas() {
 
     const [contadorMasculino, setContadorMasculino] = useState(0);
-      const [contadorFeminino, setContadorFeminino] = useState(0);
+    const [contadorFeminino, setContadorFeminino] = useState(0);
     const [contadorTotal, setContadorTotal] = useState(0);
   
     useEffect(() => {
@@ -25,12 +25,12 @@ function ContadorDePessoas() {
       };
     }, []);
     const atualizarContadores = ()=> {
-        setContadorTotal(contadorMasculino + contadorFeminino);
+        setContadorTotal(contadorMasculino + 1);
+        setContadorTotal(contadorFeminino + 1);
+        
       }
     
   function adicionarMasculino() {
-
-
     
     setContadorMasculino(contadorMasculino + 1);
     atualizarContadores();
@@ -58,7 +58,7 @@ function ContadorDePessoas() {
   function zerarContador() {
     setContadorMasculino(0);
     setContadorFeminino(0);
-    setContadorTotal(0);
+     setContadorTotal(0);
   }
 
   return (
@@ -67,7 +67,7 @@ function ContadorDePessoas() {
         <img src={imgZerar} alt="" id="imagemZerarContador" width="50px" onClick={zerarContador} />
       </div>
       <div>
-        <div className="contador-div">Total: {contadorTotal}</div>
+          <div className="contador-div">Total: {contadorTotal}</div>
       </div>
       <div>
         <div className="contador-div">Homens: {contadorMasculino}</div>
