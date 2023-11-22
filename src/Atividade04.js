@@ -1,5 +1,7 @@
-import Calculator from "./Calculadora/Calclator";
+import Calculator from "./Calculadora/Calculator";
 import {Link} from "react-router-dom";
+
+
 function Atividade04(){
     return(
         <>
