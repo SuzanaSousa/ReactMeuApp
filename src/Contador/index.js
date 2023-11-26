@@ -18,7 +18,7 @@ function ContadorDePessoas() {
     useEffect(() => {
       const interval = setInterval(() => {
         atualizarContadores();
-      }, 1000);
+      }, 10000);
   
       return () => {
         clearInterval(interval);
